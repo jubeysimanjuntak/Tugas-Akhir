@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <main role="main" class="container">
+        <div class="jumbotron text-center">
+            <h1>Begini nih Penyakitmu</h1>
+
+            <div class="container">
+                <strong class="medium">
+                    Setelah sistem ini melakukan pembelajaran terhadap gejala-gejala
+                    yang anda alami, berikut hasilnya
+                </strong>
+                <form>
+                    {% if coba in coba1 %}
+                        <div class="container">
+                            <strong>{{ coba }}</strong>
+                        </div>
+                    {% endif %}
+
+{#                    {% for gejala_fix in gejala_fix %}#}
+{#                        <div class="container">#}
+{#                            <p> Penyakitnya adalah : {{ gejala_fix }}</p>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+                </form>
+            </div>
+        </div>
+    </main>
+
+{% endblock %}
+

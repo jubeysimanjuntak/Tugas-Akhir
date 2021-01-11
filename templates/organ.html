@@ -1,0 +1,1602 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!-- Default unchecked -->
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <div class="text-center"><h3 class="text-center">Daftar Organ</h3></div>
+            <br>
+            <div class="container">
+                <div class="row">
+                    {# Tubuh #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button onclick="function1" type="button"
+                                    class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Tubuh</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <form method="POST" , action="">
+                                        {% for tubuh in organ_tubuh %}
+                                            <div class="small">
+                                                <input type="checkbox", value={{ tubuh.id }} name="gejala", id="gejala"/>&nbsp;{{ tubuh.gejala }}
+                                            </div>
+                                        {% endfor %}
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {# Rambut #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Rambut</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {# Kepala #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kepala</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {# Wajah #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Wajah</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {# Leher #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Leher</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Mata #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Mata</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    {# Mulut  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Mulut </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Gigi  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Gigi </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Lidah  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Lidah </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Telinga #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Telinga</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    {# Bahu #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Bahu</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    {# Dada #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Dada</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Payudara #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Payudara</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Perut #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Perut</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Jari-jari #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Jari-jari</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Bibir #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Bibir</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Gusi #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Gusi</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Paha #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Paha</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Punggung #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Punggung</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Pinggul #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Pinggul</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Pinggang #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Pinggang</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Kulit #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kulit</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    {#limfotik #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                limfotik</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Rektum #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Rektum</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Tulang #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Tulang</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Sendi #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Sendi</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Otot #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Otot</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Jantung #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Jantung</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Pembuluh darah  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Pembuluh darah </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Darah  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Darah </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Kelenjar ludah  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kelenjar ludah </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Kerongkongan  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kerongkongan </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Lambung  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Lambung </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Usus  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Usus </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Anus  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Anus </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Saluran empedu  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Saluran empedu </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Hidung  #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Hidung </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Trakea #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Trakea</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Bronkus #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Bronkus</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Paru-paru #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Paru-paru</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Hati#}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Hati</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Ginjal #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Ginjal</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Kandung kemih #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kandung kemih</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Otak #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Otak</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Saraf #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Saraf</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Hormon #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Hormon</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Testis #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Testis</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Penis #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Penis</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Uretra #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Uretra</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Skrotum #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Skrotum </s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Ovarium #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Ovarium</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Klitoris #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Klitoris</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Saluran tuba fallopi #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Saluran tuba fallopi</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Rahim #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Rahim</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Vagina #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Vagina</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Tengkuk #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Tengkuk</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# limfosit #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                limfosit</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Kelenjar air mata #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kelenjar air mata</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Kelenjar keringat #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kelenjar keringat</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Kelenjar air ludah #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Kelenjar air ludah</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br><br>
+                    {# Medula spinalis (meningens) #}
+                    <div class="col-sm-2">
+                        <div class="button-group">
+                            <button type="button" class="btn btn-outline-secondary btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                Medula spinalis (meningens)</s> <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="small" data-value="option1" tabIndex="-1"><input
+                                            type="checkbox"/>&nbsp;Option 1
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+            <br>
+            <form method="POST">
+                <div class="text-center">
+                    <a class="btn btn-lg btn-primary" type="submit" role="button" href="hasil">Hasil Diagnosis &raquo;</a>
+                </div>
+            </form>
+
+        </div>
+    </main>
+
+    <script src="../static/checkbox.js"></script>
+
+{% endblock %}

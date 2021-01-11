@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <form method="POST" action="/hasil">
+    <input type="checkbox" value="1" name="pilih"> Pilih1
+    <input type="checkbox" value="2" name="pilih"> Pilih2
+    <input type="checkbox" value="3" name="pilih"> Pilih3
+    <input type="submit" class="btn-outline-info" href="hasil">
+    </form>
+{% endblock %}
